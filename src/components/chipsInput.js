@@ -45,8 +45,8 @@ const ChipsInput = () => {
   };
 
   const handleKeyDown = (e) => {
-    if (e.key === "Enter") {
-      addChip(e.target.value);
+    if (e.key === "Enter" && searchedSuggestions.length === 1) {
+      addChip(searchedSuggestions[0]);
       setInput("");
     }
     if (e.key === "Backspace" && !input && !readyToRemove) {
