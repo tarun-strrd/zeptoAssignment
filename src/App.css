@@ -93,6 +93,7 @@
 
 .suggest-chips-container {
   position: absolute;
+  box-shadow: black 0px 0px 10px 0px;
   top: 30;
   left: 0;
   max-height: 250px;
